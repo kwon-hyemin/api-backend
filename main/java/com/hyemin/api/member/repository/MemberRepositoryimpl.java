@@ -1,5 +1,9 @@
 package com.hyemin.api.member.repository;
 
+import com.hyemin.api.member.domain.CalcDTO;
+import com.hyemin.api.member.domain.MemberDTO;
+import org.springframework.stereotype.Repository;
+
 /**
  * packageName: com.hyemin.api.member.repository
  * fileName : MemberRepositoryimpl
@@ -11,5 +15,28 @@ package com.hyemin.api.member.repository;
  * ================================
  * 2022-02-11    권혜민   최초 생성
  */
-public class MemberRepositoryimpl {
+@Repository
+public class MemberRepositoryimpl implements MemberRepository   {
+
+    @Override
+    public String calc(CalcDTO calc) {
+        return null;
+    }
+
+    @Override
+    public String bmi(MemberDTO bmi) {
+        return null;
+    }
+
+    @Override
+    public String grade(MemberDTO grade) {
+        return null;
+    }
+
+    @Override
+    public String login(MemberDTO login){return null;}
+
+    @Override
+    public String lotto(MemberDTO lotto){return null;}
+
 }
